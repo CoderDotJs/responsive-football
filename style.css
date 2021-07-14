@@ -1,0 +1,155 @@
+      
+       /* =============| Fonts |============= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+        /* =============| Re-usable Classes|============= */
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+ul > li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+        /* =============| Header Section |============= */
+
+
+.header{
+    background-color: #2D25A0;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.header .container ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.header .container ul {
+    display: flex;
+}
+.header .container ul li{
+    margin-right: 40px;
+}
+.header .nav-btn{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 8px 26px;
+}
+.header .fas{
+    margin-right: 5px;
+}
+
+
+        /* =============| Top Banner Section|============= */
+
+
+.top-banner{
+    background-color: #2D25A0;
+    height: 85vh;
+}
+.top-banner .container .inner-half h1{
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 80px;
+    color: white;
+}
+.top-banner .container .inner-half img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.top-banner .container .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: flex-start;
+    text-align: left;
+}
+.top-banenr .container .header-text, .img{
+    height: 100%;
+}
+.top-banner .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.top-banner .banner-btn{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 8px 26px;
+    margin-top: 14px;
+}
+.top-banner .fas{
+    margin-left: 10px;
+}
+
+  
+        /* =============| Cards Section |============= */
+
+.cards-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+.cards-section .card-item .card-header-text{
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.cards-section .card-item p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
+.cards-section .card-item{
+    max-width: 330px;
+    max-height: auto;
+    padding: 16px 16px 40px 16px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+.cards-section .card-item .card-image{
+    max-width: 300px;
+    max-height: 256px;
+    transform: rotate(0deg);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease;
+}
+.cards-section .card-item:hover .card-image{
+    transform: rotate(-1.5deg);
+}
+
+
+        /* =============| Highlight Section |============= */
+
+        
+        /* =============||============= */
+        /* =============||============= */
