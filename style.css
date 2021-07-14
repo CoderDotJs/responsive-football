@@ -37,6 +37,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+    padding-bottom: 10px;
 }
 .header .container ul li a{
     font-size: 16px;
@@ -197,7 +198,7 @@ a{
     justify-content: center;
     align-items: center;
 }
-.highlight-section .watch-btn.fas{
+.highlight-section .fas{
     margin-left: 10px;
 }
 .highlight-text h1{
@@ -214,7 +215,13 @@ a{
     align-items: flex-start;
     justify-content: center;
 }
-
+.watch-btn{
+    transform: rotate(0deg) skew(0deg) scale(1);
+    transition: transform 0.4s ease;
+}
+.watch-btn:hover{
+    transform: rotate(-5deg) skew(-5deg) scale(1.1);
+}
 
         /* =============| Blogs Section |============= */
 
@@ -275,7 +282,7 @@ iframe{
     height: 100vh;
     width: 100%;
     margin-top: 60px;
-    background-size: auto;
+    background-size: cover;
 }
 .contact-section .contact-title{
     font-family: 'Poppins', sans-serif;
@@ -294,12 +301,15 @@ iframe{
     color: black;
     padding: 12px 100px;
     font-family: 'Poppins', sans-serif;
+}
+.contact-btn{
     transform: rotate(0deg) skew(0deg) scale(1);
     transition: transform 0.4s ease;
 }
 .contact-btn:hover{
     transform: rotate(-5deg) skew(-5deg) scale(1.1);
 }
+
 
         /* =============| Footer Section |============= */
 
