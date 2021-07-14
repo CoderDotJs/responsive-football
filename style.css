@@ -350,7 +350,7 @@ footer .footer-text{
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
     .header .container ul {
         display: none;
@@ -364,7 +364,7 @@ footer .footer-text{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-bottom: 30px;
+        padding-bottom: 15px;
     }
     .top-banner .container .inner-half h1{
         font-size: 36px;
@@ -425,9 +425,14 @@ footer .footer-text{
     }
 
         /* contact section  */
-
+    .contact-section{
+        margin-top: 20px;
+    }
     .contact-section .contact-title{
     font-size: 30px;
+    }
+    .contact-section .contact-btn{
+        padding: 6px 30px;
     }
 
         /* footer section  */
