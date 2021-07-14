@@ -485,20 +485,14 @@ footer .footer-text{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         padding-bottom: 25px;
     }
     .top-banner .container .inner-half h1{
         font-size: 40px;
         line-height: 60px;
     }
-    .top-banner .container .header-text {
-        display: flex;
-        flex-direction: column;
-        justify-content:  space-between;
-        align-items: flex-start;
-        text-align: left;
-    }
+    
     .top-banner .container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
