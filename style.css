@@ -225,7 +225,7 @@ a{
 
         /* =============| Blogs Section |============= */
 
-article{
+#article{
     padding: 60px 0 100px 0;
     font-family: 'Poppins', sans-serif;
 }
@@ -234,7 +234,7 @@ article{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 28px;
 }
-article .blog-item{
+#article .blog-item{
     padding: 14px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
 }
@@ -243,14 +243,31 @@ article .blog-item{
     font-size: 48px;
     padding: 0 0 40px 0;
     text-align: center;
+    position: relative;
+    display: inline-block;
 }
-article .blog-item h3{
+.blog-title::before{
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #E02C6D;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: skew(-20deg) rotate(-3deg) scaleX(1);
+    z-index: -1;
+    transition: transform 0.1s ease;
+}
+.blog-title:hover::before{
+    transform: skew(-20deg) rotate(-3deg) scaleX(1.1);
+}
+#article .blog-item h3{
     font-size: 18px;
     font-weight: 500;
     text-decoration: underline;
     padding-top: 10px;
 }
-article .blog-item img{
+#article .blog-item img{
     width: 100%;
 }
 
@@ -261,7 +278,24 @@ article .blog-item img{
     font-family: 'Poppins', sans-serif;
     font-size: 48px;
     padding: 0 0 40px 0;
-    text-align: center;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+}
+.clip-title::before{
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #E02C6D;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: skew(-20deg) rotate(-3deg) scaleX(1);
+    z-index: -1;
+    transition: transform 0.1s ease;
+}
+.clip-title:hover::before{
+    transform: skew(-20deg) rotate(-3deg) scaleX(1.1);
 }
 .clips{
     display: grid;
@@ -603,13 +637,13 @@ footer .footer-text{
         padding-bottom: 25px;
     }
     .top-banner .container .inner-half h1{
-        font-size: 40px;
+        font-size: 48px;
         line-height: 60px;
     }
     .top-banner .container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 40px;
+        grid-row-gap: 50px;
     }
 
             /* card section  */
