@@ -192,6 +192,11 @@ a{
     padding: 8px 26px;
     margin-top: 18px;
 }
+.highlight-section .hl-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .highlight-section .watch-btn.fas{
     margin-left: 10px;
 }
@@ -502,6 +507,9 @@ footer .footer-text{
     padding-top: 70px;
     margin-bottom: 100px;
     }
+
+        /* highlight section  */
+
     .highlight-section{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -541,3 +549,108 @@ footer .footer-text{
         margin-bottom: 30px;
     }
 }
+
+
+             /* 
+                For 996px or down devides 
+            */
+
+@media only screen and (min-width: 769px) and (max-width: 996px) {
+    
+    /* header section  */
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .header .container ul {
+        display: flex;
+    }
+    .header .container ul li{
+        margin-right: 15px;
+    }
+    .header .container ul li a{
+        font-size: 16px;
+    }
+
+    /* banner section */
+
+    .top-banner{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+    .top-banner .container .inner-half h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .top-banner .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+            /* card section  */
+
+    .cards-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    }
+
+        /* hightlight section  */
+
+    .highlight-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        padding: 60px 0;
+    }
+
+            /* blog section  */
+
+    .article{
+        display: grid;
+        grid-row-gap: 28px;
+        grid-column-gap: 28px;;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog-title{
+        font-size: 48px;
+    }
+
+            /* contact section  */
+    .contact-section{
+        margin-top: 35px;
+    }
+    .contact-section .contact-title{
+        font-size: 48px;
+    }
+    .contact-section .contact-btn{
+        padding: 10px 40px;
+    }
+            /* footer section  */
+    footer{
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    footer .footer-img{
+        width: 70%;
+        margin-bottom: 30px;
+    }
+}
+
+            
