@@ -369,7 +369,7 @@ footer .footer-text{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         padding-bottom: 15px;
     }
     .top-banner .container .inner-half h1{
