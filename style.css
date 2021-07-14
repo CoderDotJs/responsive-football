@@ -275,7 +275,7 @@ iframe{
     height: 100vh;
     width: 100%;
     margin-top: 60px;
-    background-size: cover;
+    background-size: auto;
 }
 .contact-section .contact-title{
     font-family: 'Poppins', sans-serif;
@@ -491,6 +491,13 @@ footer .footer-text{
     .top-banner .container .inner-half h1{
         font-size: 40px;
         line-height: 60px;
+    }
+    .top-banner .container .header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-between;
+        align-items: flex-start;
+        text-align: left;
     }
     .top-banner .container{
         display: grid;
