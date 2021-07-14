@@ -37,7 +37,6 @@ a{
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-    padding-bottom: 40px;
 }
 .header .container ul li a{
     font-size: 16px;
@@ -78,6 +77,8 @@ a{
 .top-banner{
     background-color: #2D25A0;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .top-banner .container .inner-half h1{
     font-size: 64px;
@@ -103,16 +104,13 @@ a{
 }
 .top-banenr .container .header-text, .img{
     height: 100%;
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .top-banner .container{
-    display: flex;
-    /* grid-template-columns: repeat(2, 1fr); */
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .top-banner .banner-btn{
     font-family: 'Poppins', sans-serif;
@@ -155,15 +153,15 @@ a{
     font-weight: 400;
 }
 .cards-section .card-item{
-    max-width: 330px;
+    width: 100%;
     max-height: auto;
     padding: 16px 16px 40px 16px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
 }
 .cards-section .card-item .card-image{
-    max-width: 300px;
-    max-height: 256px;
+    max-width: 100%;
+    max-height: 100%;
     transform: rotate(0deg);
     transform-origin: bottom left;
     transition: transform 0.3s ease;
@@ -334,4 +332,112 @@ footer .footer-text{
 
         /*--=========================== Media Query ===========================--*/
 
-    For
+        /* 
+            For 480px or down screen size device
+        */
+
+@media only screen and (max-width: 480px){
+
+        /* header section */
+
+    .container{
+    width: 90%;
+    margin: 0 auto;
+    }
+
+    .header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 40px;
+    }
+    .header .container ul {
+        display: none;
+    }
+
+    /* banner section */
+
+    .top-banner{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .top-banner .container .inner-half h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .top-banner .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+        /* card section */
+
+    .cards-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+        /* highlight section  */
+
+    .highlight-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 60px 0 30px 0;
+    }
+    .highlight-text h1{
+        font-size: 30px;
+    }
+    .highlight-text{
+        margin-bottom: 30px;
+    }
+        /* blog section  */
+    
+    .article{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 28px;
+    }
+    .blog-title{
+        font-size: 30px;
+    }
+
+        /* match clip section  */
+
+    .clip-title{
+    font-size: 30px;
+    }
+
+    .clips{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 14px;
+    }
+    .match-clip-section{
+        padding: 0 0 100px 0;
+    }
+
+        /* contact section  */
+
+    .contact-section .contact-title{
+    font-size: 30px;
+    }
+
+        /* footer section  */
+    footer{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    }
+    footer .footer-img{
+    width: 70%;
+    margin-bottom: 30px;
+    }
+}
