@@ -77,7 +77,7 @@ a{
 
 .top-banner{
     background-color: #2D25A0;
-    max-height: 100vh;
+    min-height: 95vh;
     display: flex;
     align-items: center;
 }
